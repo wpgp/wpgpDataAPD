@@ -1,0 +1,12 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Name>WP Download</Name><AddInID>{cfc5bde8-c5f8-44f8-8324-1881b87bc105}</AddInID><Description>Button to launch tool that allows users to download raster datasets from the WorldPop FTP</Description><Version>0.1</Version><Image>Images\worldpop_64x64.png</Image><Author>David Kerr</Author><Company>WorldPop</Company><Date>10/29/2018</Date><Targets><Target name="Desktop" version="10.1" /></Targets><AddIn language="PYTHON" library="WPDwnld_btn_addin.py" namespace="WPDwnld_btn_addin"><ArcMap>
+    <Commands>
+        <Button caption="WP Download" category="WP Download" class="ButtonClass1" id="WPDwnld_btn_addin.button" image="Images\worldpop_16x16.png" message="Launch WP download wizard" tip="Launch WP download wizard"><Help heading="Launch WP download wizard">Click button to launch wizard to specify layers to download</Help></Button>
+        </Commands>
+    <Extensions>
+        </Extensions>
+    <Toolbars>
+        <Toolbar caption="WP Covariate Download Toolbar" category="WP Download" id="WPDwnld_btn_addin.toolbar" showInitially="true"><Items><Button refID="WPDwnld_btn_addin.button" /></Items></Toolbar>
+        </Toolbars>
+    <Menus>
+        </Menus>
+    </ArcMap></AddIn></ESRI.Configuration>

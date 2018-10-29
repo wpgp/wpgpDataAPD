@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<metadata xml:lang="en"><Esri><CreaDate>20181009</CreaDate><CreaTime>16015100</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><ModDate>20181026</ModDate><ModTime>121217</ModTime><scaleRange><minScale>150000000</minScale><maxScale>5000</maxScale></scaleRange><ArcGISProfile>ItemDescription</ArcGISProfile></Esri><toolbox name="WPdownload" alias="Download WorldPop Raster Covariates"><arcToolboxHelpPath>c:\program files (x86)\arcgis\desktop10.5\Help\gp</arcToolboxHelpPath><toolsets/></toolbox><dataIdInfo><idCitation><resTitle>WPdownload</resTitle></idCitation><idAbs>&lt;DIV STYLE="text-align:Left;"&gt;&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;WorldPop Covariate/Population raster Download&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Tool to enable users to download a range of country-specific rasters used and produced by the WorldPop Research Group, University of Southampton&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</idAbs><idPurp>WorldPop Covariate/Population raster Download
+Tool to enable users to download a range of country-specific rasters used and produced by the WorldPop Research Group, University of Southampton
+</idPurp><idCredit>David Kerr</idCredit></dataIdInfo><distInfo><distributor><distorFormat><formatName>ArcToolbox Toolbox</formatName></distorFormat></distributor></distInfo><mdHrLv><ScopeCd value="005"/></mdHrLv><Binary><Thumbnail><Data EsriPropertyType="PictureX">/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsK
+CwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQU
+FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAUAGYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD70uvi
+p4h0m4NvdWsNzJbysHa10+Ym72Ha8MQ3ECQmG527mAzNYqTmerUPj3xNN9ms2Omre3Nz5IkKPDEh
+w6lA5L8ebbXOH2nIe3G3Lll7i88D6Jf3t7eT2Ie6vAvmzCR1YFTGQyEH5GzDCdy4OYozn5Fx5l40
+iSzvbqzF2tlpOj20q29slwlpIkEUFsfJil2MzKxf50bIJWE5XGCAXG+InivVLjSrDTH0hLu6a4Tz
+pYZHim2+RsZGDjaAJXfOHEirGRs80bM/wZ4h1DSdMisNLFpC13JaPJPdsY1LyWNqR82GClm3lmIb
+LvGuCZdysaVbnUNNaJ7XR7vSjfK2oyXjW/nzozRyyM0wmBDrBuCyLI2I5CHHkHzKljbx6pZ2UMEc
+mjbpYYZCxeBSZ4iCPNdpHhAWGCHywWTzUMRVvldQDlvijI3/AAp/x9PcCO4km+wXFwsQKRSSHW7k
+NtIYllwoVX4LIqnCfdX5tWLw9daLLcLBc2UkWIpN0rTP5rZMZUgBShCyblI3DYME5OPpb4oG3P7P
+njbZHLLOH0/N+1xJcLPH9vXaBIzEH5vMkBUKrRzxOFXftX5Y0S2nvvtltHEbiNod7RD+/kRxMPQh
+5VGfRmB4Jr8j4sl/woQVr3gvzkfM5l/HS8v1Z13wb0u4s/i94JmZfNtZNTi8u6jVvKk5PAJA54PB
+wRjpXzJ+3nbaZY/tbeP7jU47y6a6vbd1t7OdYCsK2sKFi7RuCWZXAGONmTncAPp/4MtDZ/FrwfZ2
+8gmZtVga4njbKOyltqpwCVG45J4J5HABPy5+3X4im039sL4hJLb2uoWUN/bOba6t433KbS3LIHZS
+yA8/dIwSWGCc1+i+Fy/j8v8AXwnv8N7zt/Wx4xo3gmy8SQzS6Xq9xIlpNbi9S400rLDbyPsa5WOK
+SUyJG2wOBhv3qYDfNt+57fw7dW//AATb8J6PatHq1zb+K7uMPYh2WbZcXhZkDKrkYBOCobg5AIxX
+xV4P8O3+meL9dGmX/wBhn0p57W31GaZoljdS5Z5PLBYhbeG5kIAK5jAOchW+xNAuJLL/AIJg+ALi
+A+VNB4rlliYqG2st1dlTggg4IHXjiv0TjB3yuom7rT8mfe4Zv65Qs/tI+c20+6XTU1FreRbB5DEt
+yV+QuBkgH8D+VdJb2Nv4e8L6j/bfh5W1SaaOO0N5LLBcRRvBN+9WLcMqriFgWQq2SAQQCLfg/XNH
+1Dx4r61I+i6De2jafPDAWmhjQwhEVg7A+UsgWRQxO0ohLZXfXUah4euIfCHiFdUOnxahqVzavdpf
+SyJNZyhd1vcR53l4gFvLd5pG+czKwLkozfznSoppzi77/l/Vj9LrVmpKEla9vz7+XX5dzjPhnx4g
+m/69W/8AQ0ord8K+B9b8K60LjUrLyLS4tmFvdLIjQ3H+qfMTg4kXa6HcuRh1OcMCSt6EZRhaSszj
+xM4znzRd0fsrXlOkLH4m+MHjDTLxZEg0owTW72txLBIWlghLbijjI+QYH1zmiiv1g/CjvL7wbo99
+BbRGyFsttGsMJsZHtmjjXBWMNEVIQEAhc4BAOMgV574shtoPit4U8MxWscOk6hBI8scDPCw8uK6I
+CsjDGTKxPqce+SigCn+05pNpo/7PXieG0i8tWls3dmYu8jfa4AWd2JZmwB8zEnivhfT9UutJe4a0
+lERuIHtpd0auHjcYZSGBHoQeoIBBBANFFfj3GEnHMINP7C/9KkfL5o2q6a7fqzrPgf8A8li8Gf8A
+YTi/nXyt+39/yeF8S/8Ar7tv/SOCiiv0rwq/5iP6/lPouGd5/wBdjwnUNWu9USBLqbzUhGEXaqgc
+KNxwBliFQFjljtXJOBX3vpf/ACi58Ef9jPP/AOlN3RRX6Txoksoml3/Rn6Fh/wDfMP8A40fNtOjd
+oY3jRmSOT76KcK2DkZHfkCiiv5dP1Y6v4Y/LrtxGDiNrdnKfwlt68kevJ59zRRRXrYf+GeNiv4h/
+/9k=</Data></Thumbnail></Binary></metadata>
