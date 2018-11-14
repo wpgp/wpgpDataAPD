@@ -112,7 +112,7 @@ class WPDownload(object):
         covariate = parameters[1].valueAsText
         ftp_path = self.cov_dict[country]['Folder'][np.where(self.cov_dict[country]['Description'] == covariate)][0]
         iso = self.cov_dict[country]['iso']
-        raster = self.cov_dict[country]['Raster_name'][np.where(self.cov_dict[country]['Description'] == covariate)][0] + ".tif"
+        raster = self.cov_dict[country]['Raster_name'][np.where(self.cov_dict[country]['Description'] == covariate)][0]
         download_path = parameters[2].valueAsText
         add_output_to_map = parameters[3].value
 
@@ -149,8 +149,10 @@ class FTPDownload:
 
     def __init__(self, iso, raster_name, ftp_folder, destination_folder):   
         self.ftp_url = "ftp.worldpop.org.uk"
+        self.ftp_user = ""
+        self.ftp_password = ""
         self.raster_name = raster_name
-        self.ftp_folder = "/WP515640_Global/Covariates/{0}/{1}".format(iso, ftp_folder)
+        self.ftp_folder = ftp_folder.replace("\\", "/")
         self.destination_folder = destination_folder
 
     def download_ftp(self):
@@ -164,8 +166,8 @@ class FTPDownload:
         """
         download_path = os.path.join(self.destination_folder, self.raster_name)
         ftp = FTP(self.ftp_url)
-        #ftp.login(self.ftp_user, self.ftp_password) Function previously called when FTP was password protected.
-        ftp.cwd(self.ftp_folder)
+        ftp.login(self.ftp_user, self.ftp_password) #Function previously called when FTP was password protected.
+        ftp.cwd(self.ftp_folder + "/")
         lf = open(download_path, 'wb')
         ftp.retrbinary('RETR ' + self.raster_name, lf.write)
         lf.close()
@@ -186,6 +188,8 @@ class CSVDownload:
 
     def __init__(self):
         self.ftp_url = "ftp.worldpop.org.uk"
+        self.ftp_user = ""
+        self.ftp_password = ""
 
     def read_csv(self):
         """Function to read csv held on FTP to query layers available
@@ -197,10 +201,10 @@ class CSVDownload:
         csv_contents, reference to bytes read from csv (to be closed in make_dict function).
         """
         ftp = FTP(self.ftp_url)
-        #ftp.login(self.ftp_user, self.ftp_password) Function previously called when FTP was password protected.
-        ftp.cwd('/WP515640_Global/Covariates')
+        ftp.login(self.ftp_user, self.ftp_password) #Function previously called when FTP was password protected.
+        ftp.cwd('/assets')
         lf = io.BytesIO()
-        ftp.retrbinary("RETR wpgAllCovariates.csv", lf.write)
+        ftp.retrbinary("RETR wpgpDatasets.csv", lf.write)
         lf.seek(0)
         csv_reader = csv.reader(lf)
         ftp.quit()
@@ -223,12 +227,12 @@ class CSVDownload:
         folder = []
         name_english = []
         for row in csv_reader:
-            if not row[0] == 'ISO3' and not row[0] == 'IDN_corect':
-                isos.append(row[0])
-                description.append(row[8])
-                rstName.append(row[5])
-                folder.append(row[6])
-                name_english.append(row[2])
+            if not row[0] == 'ID':
+                isos.append(row[2])
+                description.append(row[6])
+                rstName.append(row[5].split('/')[-1])
+                folder.append(os.path.join(*row[5].split('/')[:-1]))
+                name_english.append(row[3])
         isos_unique = list(set(isos))
         isos_np = np.array(isos)
         description_np = np.array(description)
@@ -238,10 +242,10 @@ class CSVDownload:
         name_english_unique = sorted(list(set(name_english)))
         cov_dict = {}
         for i in name_english_unique:
-            if i.endswith('land Islands'): #UTF-8 characters not read correctly.
-                name = 'Aland Islands'
-            else:
-                name = i
+            #if i.endswith('land Islands'): #UTF-8 characters not read correctly.
+            #    name = 'Aland Islands'
+            #else:
+            name = i
             cov_dict[name] = {}
             cov_dict[name]['Description'] = description_np[np.where(name_english_np == i)]
             cov_dict[name]['Raster_name'] = rstName_np[np.where(name_english_np == i)]
